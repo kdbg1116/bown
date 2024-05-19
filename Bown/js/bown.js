@@ -79,7 +79,7 @@ function nextImage() {
   paginationCircls[currentImageMinusOne].classList.add('active');
 
   // Move The images Area First Image
-  imagesAreaFirstImage.style.marginLeft = `-${540 * currentImageMinusOne}px`;
+  imagesAreaFirstImage.style.marginLeft = `-${520 * currentImageMinusOne}px`;
   console.log(600 * currentImageMinusOne);
 })();
 

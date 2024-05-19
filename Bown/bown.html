@@ -23,11 +23,10 @@
         <div class="navbar-container">
             <img class="logo" src="./assets/bown logo.svg ">
           <ul class="navbar-category">
-            <li><a href>Mother's Day</a></li>
-            <li><a href>Birthdays</a></li>
+            <li><a href>Flowers</a></li>
             <li><a href>Occasions</a></li>
-            <li><a href>Flower & Plants</a></li>
             <li><a href>Gourmet Delights</a></li>
+            <li><a href>About</a></li>
             <li><a><img src="./assets/build boquet.svg"></a></li>
             <li><a><img src="./assets/flowershop.svg"></a></li>
             <li><a><img src="./assets/add to cart.svg"></a></li>
@@ -194,6 +193,35 @@
     
 
 <footer class="new_footer_area bg_color">
+  <div class="foot-content">
+    <h3>Mail Subscription</h3>
+    <div class="subscribe">
+      <div class="content">
+        <form class="subscription">
+          <input class="add-email" type="email" placeholder="Your email address">
+          <button class="submit-email" type="button">
+            <span class="before-submit">Subscribe</span>
+            <span class="after-submit">Thank you for subscribing!</span>
+           </button>
+        </form>
+      </div>
+      <script>
+        document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
+          e.preventDefault();
+          document.querySelector('.subscription').classList.add('done');
+        });
+      </script>
+    </div>
+    <center><img class="logoimg" src="./assets/bown logo.svg" alt=""></center>
+    <div class="contact_us">
+      <h3 align="right">Socials</h3>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"><img src="./assets/facebook.png" style="height: 47px;" alt=""></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"><img src="./assets/instagram.png" style="height: 47px;" alt=""></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"><img src="./assets/tik-tok.png" style="height: 47px;" alt=""></i></a></li>
+      </ul>
+    </div>
+  </div>
   <div class="new_footer_top">
       <div class="container">
           <div class="row">
@@ -203,6 +231,7 @@
               </div>
           </div>
       </div>
+
       <div class="footer_bg">
           <div class="footer_bg_one"></div>
           <div class="footer_bg_two"></div>
