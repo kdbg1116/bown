@@ -1,62 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
 @font-face {
-  font-family: Primrose;
-  src: url(../assets/Primrose-90rL.ttf);
+    font-family: Primrose;
+    src: url('./assets/Primrose-90rL.ttf');
 }
 
 .promotion-bar {
-  background-color: #f26a8d;
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
+    background-color: #f26a8d;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .promotion-bar p {
-  font-family: Primrose;
-  font-size: larger;
-  color: #ffff;
-  margin: 10px;
+    font-family: Primrose;
+    font-size: larger;
+    color: #ffff;
+    margin: 10px;
 }
 
 .navbar-container {
-  font-family: Primrose;
-  font-size: larger;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 75px;
+    font-family: Primrose;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
 }
 
 .logo {
-  height: 50px;
-  margin-top: 15px;
-  margin-left: 15px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .navbar-category {
-  display: flex;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-category li {
-  list-style: none;
-  padding: 1rem;
-  align-content: center;
-}
-
-.navbar-category img {
-  width: 40px;
-  height: 40px;
-  margin-top: -15px;
-}
-
-.navbar-category a:hover {
-  color: #f79f8e;
+    list-style: none;
+    padding: 1rem;
+    position: relative;
 }
 
 .navbar-category a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-category a:hover {
+    color: #f79f8e;
+}
+
+.navbar-category img {
+    width: 40px;
+    height: 40px;
+    transition: filter 0.3s ease;
+}
+
+.navbar-category a:hover img {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(22%) saturate(524%) hue-rotate(325deg) brightness(93%) contrast(93%);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0.5rem;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5rem;
+}
+
+.dropdown li {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.dropdown li a {
+    white-space: nowrap;
+    display: block;
+    padding: 0.5rem;
+    color: black;
+}
+
+.dropdown li a:hover {
+    color: #f79f8e;
+}
+
+.navbar-category > li:hover > .dropdown,
+.navbar-category > li:hover > ul > li:hover > .dropdown {
+    display: grid;
+}
+
+hr {
+    margin-top: -1px;
 }
 
  .container{
